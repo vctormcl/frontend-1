@@ -1,0 +1,125 @@
+/* Display de Bloco Embutido */
+.inline-block{
+    width: 500px;
+    height: 500px;
+    background-color: #754;
+    font-size: xx-large;
+    color: #fff;
+    margin: 15px;
+    display: inline-block;
+}
+
+/* Display: Bloco de Exibição */
+.block{
+    background-color: darkmagenta;
+    font-size: xx-large;
+    color: white;
+    margin: 10px;
+    display: block;
+}
+
+/* Escondendo o elemento */
+.escondendo{
+    display: none;
+}
+
+/* Posição Estática - 
+ele não segue o fluxo do HTML, static não é afetados por 
+top, left, right, bottom */
+.static{
+    position: static;
+background-color: #848;
+color: #fff;
+width: 100px;
+height: 100px;
+}
+
+/* Posição Relativa */
+.relative{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    color: white;
+    top: 50px;
+    left: 50px;
+}
+
+
+/* Posição Absoluta - elemento topo do navegador*/
+.absolute{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #785;
+    color: white;
+    top: 2px;
+    left: 2px;
+}
+
+/* Posição Relativa com Absoluta */
+.bloco-relativo{
+    width: 250px;
+    height: 250px;
+    border: 2px solid blue;
+    margin-top: 100px;
+    position: relative;
+}
+
+.bloco-absoluto1, .bloco-absoluto2{
+    width: 70px;
+    height: 70px;
+    background-color: brown;
+    position: absolute;
+}
+
+.bloco-absoluto1{
+    top: 5px;
+    left: 5px;
+}
+
+.bloco-absoluto2{
+    bottom: 5px;
+    right: 5px;
+}
+
+/* Posição Sticky */
+.sticky{
+    width: 150px;
+    height: 150px;
+    background-color: firebrick;
+    color: aliceblue;
+    border: 2px solid black;
+    position: sticky;
+    top: 10px;
+    right: 10px;
+    margin-left: auto;
+}
+
+/* Z- Index */
+.bloco-absoluto3, .bloco-absoluto4, .bloco-absoluto5{
+    width: 60px;
+    height: 60px;
+    background-color: coral;
+    position: absolute;
+}
+
+.bloco-absoluto3{
+top: 0px;
+left: 0px;    
+z-index: 3;
+}
+
+.bloco-absoluto4{
+top: 15px;
+left: 15px; 
+background-color: darkgray;  
+z-index: 2;
+}
+
+.bloco-absoluto5{
+top: 30px;
+left: 30px;   
+background-color: lightgreen;
+z-index: 1;
+}

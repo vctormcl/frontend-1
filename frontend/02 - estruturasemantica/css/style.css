@@ -1,0 +1,135 @@
+/* Estilos Gerais */
+*  {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #1a1a1a;
+color: #e0e0e0;
+line-height: 1.6;
+padding: 20px;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+/* Header */
+header {
+background-color: #2c2c2c;
+color: #f4b042;
+padding: 25px;
+border-radius: 8px 8px 0 0;
+text-align: center;
+border-bottom: 3px solid #f4b042;
+}
+
+header h1 {
+margin-bottom: 12px;
+font-size: 1.8rem;
+}
+
+.header-menu {
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 25px;
+}
+
+.header-menu a {
+color: #ffffff;
+text-decoration: none;
+font-weight: 500;
+}
+
+.header-menu a:hover {
+color: #f4b042;
+text-decoration: underline;
+}
+
+/* Nav */
+nav {
+background-color: #242424;
+color: #fff;
+padding: 12px 20px;
+display: flex;
+gap: 15px;
+align-items: center;
+flex-wrap: wrap;
+border-bottom: 1px solid #383838;
+}
+
+nav h2 {
+font-size: 0.95rem;
+color: #f4b042;
+}
+
+nav a {
+color: #cccccc;
+text-decoration: none;
+font-size: 0.9rem;
+}
+
+nav a :hover { 
+color:#f4b042;
+text-decoration: underline;
+}
+
+/* Main */
+main {
+background-color: #606060;
+padding: 30px;
+}
+
+main section, main article {
+margin-bottom: 25px;
+padding-bottom: 20px;
+border-bottom: 1px solid #333333;
+}
+
+h2 {
+color: #f4b042;
+margin-bottom: 12px;
+font-size: 1.3rem;
+}
+
+p {
+margin-bottom: 10px;
+color: #cccccc
+}
+
+/* Listas Gerais */
+main ul {
+margin-left: 20px;
+color: #cccccc;
+}
+
+main li {
+margin-bottom: 8px;
+}
+
+/* Links dentro do conteúdo */
+main article a {
+color: #f4b042;
+text-decoration: none;
+font-size: 0.9rem;
+}
+
+main article a:hover {
+ text-decoration: underline;
+}
+
+figure img {
+max-width: 100%;
+height: auto;
+border-radius: 6px;
+border: 2px solid #383838;
+}
+
+figcaption {
+font-size: 0.85rem;
+color: #999;
+margin-top: 8px;
+font-style: italic;
+}

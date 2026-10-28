@@ -1,0 +1,115 @@
+body{
+    padding-bottom: 550px;
+}
+
+/* FlexBox */
+.flexbox{
+    display: flex;
+    background-color: blue;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Flex Direction */
+.flex-direction{
+    display: flex;
+    flex-direction: column;
+    background-color: #bbb;
+}
+
+/* Flex Wrap */
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.caixa{
+    height: 50px;
+    width: 33%;
+    border: 2px solid salmon;
+}
+
+/* Flex Justify-Content */
+.center, .space-around, .space-between, .end{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.center .caixa, .space-around .caixa, .space-between .caixa, .end .caixa{
+    width: 60px;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.end{
+    justify-content: end;
+}
+
+/* Align Items */
+.align-center, .flex-end, .strech{
+    display:flex;
+    height: 200px;
+    margin-bottom: 30px;
+    border: 3px solid black;
+}
+
+.align-center .caixa, .flex-end .caixa, .strech .caixa{
+    width: 60px;
+}
+
+.align-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.strech{
+    align-items: stretch;
+}
+
+.strech .caixa{
+    height: auto;
+}
+
+/* Gap */
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid blue;
+    gap: 8px;
+}
+
+.gap .caixa{
+    width: 32%;
+}
+
+/* align self */
+.align-self{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    border: 2px solid blue;
+}
+
+.align-self .diferenciada{
+    align-self: flex-end;
+}
+
+.align-self .diferenciada2{
+    align-self: flex-start;
+}

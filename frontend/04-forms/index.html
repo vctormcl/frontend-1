@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+   <h1>Formulários</h1>
+    <form>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nomecompleto" placeholder="Insira seu nome completo" required/>
+        
+<!-- input number -->
+ <label for="certificados"> Quantos certifiados você possui?</label>
+<input type="number" name="certificados" />     
+
+<!-- Input E-mail -->
+<label for="emailinserido">Insira o seu e-mail:</label>
+<input type="email" name="emailinserido" />
+
+<!-- Input Password -->
+ <label for="senha">Insira a senha</label>
+ <input type="password" name="senha"/>
+<!-- Textarea -->
+<label for="feedback">Descreva o seu feedback sobre o site:</label>
+<textarea name="feedback"></textarea>
+
+<!-- Input de Data -->
+<label for="datadenascimento">Data de nascimento:</label>
+<input type="date" name="datadenascimento" />
+
+<!-- Input file/anexos -->
+ <label for="arquivo">Insira seu currículo em PDF</label>
+ <input type="file" name="arquivo" />
+
+        <!-- Inpuut Radio - somente uma seleção -->
+         <label for="genero">Qual é seu gênero?</label>
+         <div class="radio">
+        <input type="radio" value="Feminino" name="genero">
+        <label for="Feminino">Feminino</label>
+         </div>
+
+         <div class="radio">
+        <input type="radio" value="Masculino" name="genero">
+        <label for="Masculino">Masculino</label>
+         </div>
+
+         <div class="radio">
+        <input type="radio" value="NaoBinario" name="genero">
+        <label for="NaoBinario">Não Binário</label>
+         </div>
+
+          <div class="radio">
+        <input type="radio" value="NaoInformou" name="genero">
+        <label for="NaoInformou">Prefiro não informar</label>
+         </div>
+
+         <!-- Input Checkbox / uma ou mais opções -->
+<div>
+    <label for="linguasestrangeiras">Quais línguas você pretende estudar?</label>
+
+    <div class="radio">
+        <input type="checkbox" name="linguasestrangeiras" value="inglês">
+        <label for="inglês"> Inglês</label>
+
+        <div class="radio">
+        <input type="checkbox" name="linguasestrangeiras" value="espanhol">
+        <label for="espanhol">Espanhol</label>
+
+        <div class="radio">
+        <input type="checkbox" name="linguasestrangeiras" value="alemao">
+        <label for="alemao"> Alemão</label>
+
+    </div>
+
+</div>
+
+<!-- Select/ menu suspenso -->
+<div>
+    <label for="cidade">Selecione a sua cidade:</label>
+    <select name="cidade">
+<option value="Osasco">Osasco</option>
+<option value="SaoPaulo" selected>São Paulo</option>
+<option value="Taboao">Taboão da Serra</option>
+
+    </select>
+</div>
+
+
+<!-- Limpando/Resetando o formulário -->
+ <input type="reset" value="Limpar">
+
+        <!-- submit botão -->
+         <input type="submit" value="Enviar"/>
+    </form>
+    </div>
+</body>
+</html>
